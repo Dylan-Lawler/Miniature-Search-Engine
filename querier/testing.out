@@ -1,0 +1,164 @@
+Testing with no arguments
+Usage: ./querier pageDirectory indexFilename
+
+
+Testing a directory not produced by Crawler
+fakedir is not a Crawler produced directory
+
+
+Testing an unreadable file
+fakefile does not exist or is not a readable file
+
+
+Testing a series of bad queries (operand first and last, in sequence, non letter searches)
+Query? First search word can not be 'or'
+
+Query? Last search word can not be 'and'
+
+Query? 'or' and 'and' cannot be searched in sequence 
+
+Query? '213' is not a valid word
+
+Query? 'bad-query' is not a valid word
+
+Query? 
+
+
+Testing 10 fuzzqueries at letters index of depth six
+Query? ./fuzzquery: generating 10 queries from 22 words
+Query: fourier and traversal 
+No documents match.
+-----------------------------------------------
+
+Query? Query: this or the the or tse computational 
+Matches 1 documents (ranked)
+score     2 doc     1: http://cs50tse.cs.dartmouth.edu/tse/letters/index.html
+-----------------------------------------------
+
+Query? Query: biology playground or computational 
+Matches 1 documents (ranked)
+score     1 doc     9: http://cs50tse.cs.dartmouth.edu/tse/letters/C.html
+-----------------------------------------------
+
+Query? Query: timestamp breadth search or computational or faraday or fast 
+Matches 2 documents (ranked)
+score     1 doc     9: http://cs50tse.cs.dartmouth.edu/tse/letters/C.html
+score     1 doc     7: http://cs50tse.cs.dartmouth.edu/tse/letters/F.html
+-----------------------------------------------
+
+Query? Query: algorithm or coding eniac the and home or breadth 
+Matches 3 documents (ranked)
+score     1 doc     2: http://cs50tse.cs.dartmouth.edu/tse/letters/A.html
+score     1 doc     1: http://cs50tse.cs.dartmouth.edu/tse/letters/index.html
+score     1 doc     3: http://cs50tse.cs.dartmouth.edu/tse/letters/B.html
+-----------------------------------------------
+
+Query? Query: traversal computational playground coding or the 
+Matches 1 documents (ranked)
+score     1 doc     1: http://cs50tse.cs.dartmouth.edu/tse/letters/index.html
+-----------------------------------------------
+
+Query? Query: fast 
+Matches 1 documents (ranked)
+score     1 doc     7: http://cs50tse.cs.dartmouth.edu/tse/letters/F.html
+-----------------------------------------------
+
+Query? Query: search the or fast 
+Matches 1 documents (ranked)
+score     1 doc     7: http://cs50tse.cs.dartmouth.edu/tse/letters/F.html
+-----------------------------------------------
+
+Query? Query: home 
+Matches 9 documents (ranked)
+score     2 doc     1: http://cs50tse.cs.dartmouth.edu/tse/letters/index.html
+score     1 doc     2: http://cs50tse.cs.dartmouth.edu/tse/letters/A.html
+score     1 doc     3: http://cs50tse.cs.dartmouth.edu/tse/letters/B.html
+score     1 doc     4: http://cs50tse.cs.dartmouth.edu/tse/letters/E.html
+score     1 doc     5: http://cs50tse.cs.dartmouth.edu/tse/letters/G.html
+score     1 doc     6: http://cs50tse.cs.dartmouth.edu/tse/letters/H.html
+score     1 doc     7: http://cs50tse.cs.dartmouth.edu/tse/letters/F.html
+score     1 doc     8: http://cs50tse.cs.dartmouth.edu/tse/letters/D.html
+score     1 doc     9: http://cs50tse.cs.dartmouth.edu/tse/letters/C.html
+-----------------------------------------------
+
+Query? Query: transform or huffman or depth and graph and transform 
+Matches 2 documents (ranked)
+score     2 doc     7: http://cs50tse.cs.dartmouth.edu/tse/letters/F.html
+score     1 doc     6: http://cs50tse.cs.dartmouth.edu/tse/letters/H.html
+-----------------------------------------------
+
+Query? 
+Testing 10 fuzzqueries at letters index of depth six
+Query? ./fuzzquery: generating 10 queries from 6506 words
+Query: dereferencing and charinsert 
+Matches 1 documents (ranked)
+score     1 doc     6: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/C_(programming_language).html
+-----------------------------------------------
+
+Query? Query: bruce or limburgs houston or encoded smtp 
+Matches 1 documents (ranked)
+score     2 doc     7: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Computer_science.html
+-----------------------------------------------
+
+Query? Query: explained ford or has 
+Matches 6 documents (ranked)
+score    28 doc     6: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/C_(programming_language).html
+score    26 doc     4: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Dartmouth_College.html
+score    19 doc     3: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Hash_table.html
+score    17 doc     7: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Computer_science.html
+score    16 doc     2: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Linked_list.html
+score     8 doc     5: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Unix.html
+-----------------------------------------------
+
+Query? Query: timestamp affordable opposed or strung or faraday or foundation 
+Matches 6 documents (ranked)
+score     5 doc     4: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Dartmouth_College.html
+score     2 doc     5: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Unix.html
+score     2 doc     7: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Computer_science.html
+score     1 doc     2: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Linked_list.html
+score     1 doc     6: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/C_(programming_language).html
+score     1 doc     3: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Hash_table.html
+-----------------------------------------------
+
+Query? Query: interpreters or acm stem modules and templates or violations 
+Matches 6 documents (ranked)
+score     5 doc     5: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Unix.html
+score     5 doc     6: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/C_(programming_language).html
+score     5 doc     2: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Linked_list.html
+score     4 doc     7: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Computer_science.html
+score     4 doc     3: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Hash_table.html
+score     3 doc     4: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Dartmouth_College.html
+-----------------------------------------------
+
+Query? Query: handles manually johnson pioneers or puzzle 
+Matches 1 documents (ranked)
+score     1 doc     6: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/C_(programming_language).html
+-----------------------------------------------
+
+Query? Query: karl 
+Matches 2 documents (ranked)
+score     2 doc     3: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Hash_table.html
+score     1 doc     4: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Dartmouth_College.html
+-----------------------------------------------
+
+Query? Query: alphabetically quickly or city 
+Matches 1 documents (ranked)
+score     2 doc     4: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Dartmouth_College.html
+-----------------------------------------------
+
+Query? Query: appealed 
+Matches 1 documents (ranked)
+score     1 doc     5: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Unix.html
+-----------------------------------------------
+
+Query? Query: diagnostic or polski or encoding and cmp and creator 
+Matches 6 documents (ranked)
+score     3 doc     6: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/C_(programming_language).html
+score     2 doc     4: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Dartmouth_College.html
+score     1 doc     3: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Hash_table.html
+score     1 doc     2: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Linked_list.html
+score     1 doc     5: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Unix.html
+score     1 doc     7: http://cs50tse.cs.dartmouth.edu/tse/wikipedia/Computer_science.html
+-----------------------------------------------
+
+Query? 
